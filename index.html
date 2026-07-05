@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TR-1 — hybrid strength + running coach (beta)</title>
+<meta name="description" content="TR-1 is a personal hybrid strength and running coach for iPhone. Beta via TestFlight." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; -webkit-font-smoothing:antialiased; }
+  :root{ --wall:#16181d; --surface:#0d0d0d; --ink:#fff; --muted:#b2b3b3; --faint:#585a5a;
+    --border:#242424; --accent:#FF9500; --on-accent:#1a1205; }
+  body{ background:var(--wall); color:var(--ink); font-family:"Space Mono",monospace; line-height:1.6;
+    background-image:radial-gradient(circle at 20% 10%, rgba(255,255,255,.05), transparent 55%); }
+  .wrap{ max-width:760px; margin:0 auto; padding:48px 22px 80px; }
+  h1{ font-family:"Doto",monospace; font-weight:900; font-size:56px; letter-spacing:.02em; line-height:1; }
+  .tag{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
+  .beta{ display:inline-block; margin-left:12px; padding:3px 9px; border:1px solid var(--accent);
+    border-radius:4px; color:var(--accent); font-size:11px; letter-spacing:.1em; vertical-align:14px;
+    font-family:"Space Mono",monospace; }
+  .lede{ color:var(--muted); font-size:14px; margin-top:18px; max-width:56ch; }
+  h2{ font-family:"Doto",monospace; font-weight:700; font-size:20px; text-transform:uppercase;
+    letter-spacing:.06em; margin:46px 0 14px; }
+  .panel{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px 22px; }
+  ol,ul{ padding-left:20px; }
+  li{ margin:8px 0; font-size:13.5px; color:var(--muted); }
+  li b{ color:var(--ink); font-weight:700; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; }
+  .cell{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px; }
+  .cell h3{ font-family:"Doto",monospace; font-size:13px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.08em; margin-bottom:6px; }
+  .cell p{ font-size:12.5px; color:var(--muted); }
+  .shots{ display:flex; gap:16px; flex-wrap:wrap; margin-top:6px; }
+  .shots figure{ flex:1 1 220px; max-width:260px; }
+  .shots img{ width:100%; border:1px solid var(--border); border-radius:18px; display:block; }
+  .shots figcaption{ font-size:11px; color:var(--faint); margin-top:8px; text-transform:uppercase; letter-spacing:.08em; }
+  a{ color:var(--accent); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  .foot{ margin-top:56px; padding-top:18px; border-top:1px solid var(--border); font-size:11.5px; color:var(--faint); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="tag">Trainer / Tracker · Unit One</div>
+  <h1>TR-1<span class="beta">BETA</span></h1>
+  <p class="lede">A hybrid <b>strength + running coach</b> for iPhone. It prescribes today's session,
+  progresses your lifts automatically, builds your running volume week over week, and pulls the rest of
+  the picture — runs, weight, sleep, resting heart rate, steps — from Apple Health.</p>
+
+  <h2>Getting in</h2>
+  <div class="panel">
+    <ol>
+      <li>Install <b>TestFlight</b> from the App Store.</li>
+      <li>Open your <b>invite link</b> (sent to you directly) and accept.</li>
+      <li>Install <b>TR-1</b> from TestFlight.</li>
+      <li>On first launch, pick <b>Use starter program</b> (a ready-made week: three lift days, two runs,
+        an 18-week running build) or <b>Start empty</b> and build your own in the Program tab.
+        Everything is editable later either way.</li>
+      <li>Grant <b>Apple Health</b> access when asked — that's how your runs, weight, sleep, and heart
+        rate flow in, and how finished workouts count toward your Apple Fitness rings.</li>
+    </ol>
+  </div>
+
+  <h2>First-run choice</h2>
+  <div class="shots">
+    <figure>
+      <img src="img/first-run.png" alt="TR-1 first-launch screen offering Use Starter Program or Start Empty" />
+      <figcaption>First launch — starter or empty</figcaption>
+    </figure>
+  </div>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="cell"><h3>Today</h3><p>One screen tells you what's owed today — lift, run, or rest — with
+      weather-aware run windows on run days.</p></div>
+    <div class="cell"><h3>Guided sessions</h3><p>Step-through sets with an automatic rest timer and chime.
+      Weights progress by double progression: hit the top of the rep range, the load moves up.</p></div>
+    <div class="cell"><h3>Running ramp</h3><p>Easy + long runs build gradually over 18 weeks, with a
+      Zone-2 heart-rate band computed from your own Health data.</p></div>
+    <div class="cell"><h3>Travel modes</h3><p>No equipment? Hotel gym? Pull-up bar only? Each lift day has
+      circuit variants — and a two-minute Minimum floor for the worst days.</p></div>
+    <div class="cell"><h3>Health, both ways</h3><p>Watch runs, weight, sleep, resting HR, and steps import
+      automatically; finished lifts write back to Apple Fitness.</p></div>
+    <div class="cell"><h3>Yours to change</h3><p>The whole program is editable in-app — days, exercises,
+      sets, reps, the run ramp. There's a Home-Screen widget too.</p></div>
+  </div>
+
+  <h2>Good to know</h2>
+  <div class="panel">
+    <ul>
+      <li>Your data lives <b>on your phone</b> (and in Apple Health, for what you share). Details:
+        <a href="privacy.html">privacy policy</a>.</li>
+      <li><b>Back up</b> anytime from Settings ▸ Export / Import — deleting the app deletes its data.</li>
+      <li>Found a bug? Take a screenshot inside the app and TestFlight will offer to
+        <b>send it as feedback</b> — that goes straight to the developer.</li>
+      <li>Units default to imperial; switch to metric in Settings.</li>
+    </ul>
+  </div>
+
+  <div class="foot">TR-1 · beta via TestFlight · <a href="privacy.html">privacy</a></div>
+</div>
+</body>
+</html>

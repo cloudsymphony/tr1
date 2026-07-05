@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TR-1 — privacy policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; -webkit-font-smoothing:antialiased; }
+  :root{ --wall:#16181d; --surface:#0d0d0d; --ink:#fff; --muted:#b2b3b3; --faint:#585a5a;
+    --border:#242424; --accent:#FF9500; }
+  body{ background:var(--wall); color:var(--ink); font-family:"Space Mono",monospace; line-height:1.65; }
+  .wrap{ max-width:680px; margin:0 auto; padding:48px 22px 80px; }
+  h1{ font-family:"Doto",monospace; font-weight:900; font-size:34px; text-transform:uppercase; letter-spacing:.03em; }
+  h2{ font-family:"Doto",monospace; font-weight:700; font-size:16px; text-transform:uppercase;
+    letter-spacing:.07em; margin:34px 0 10px; }
+  p,li{ font-size:13.5px; color:var(--muted); }
+  ul{ padding-left:20px; } li{ margin:7px 0; }
+  b{ color:var(--ink); }
+  a{ color:var(--accent); text-decoration:none; }
+  .date{ font-size:11px; color:var(--faint); text-transform:uppercase; letter-spacing:.1em; margin-top:10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>TR-1 privacy policy</h1>
+  <p class="date">Effective 2026-07-05</p>
+
+  <h2>The short version</h2>
+  <p>TR-1 stores your data <b>on your device</b>. It has no servers, no accounts, no analytics, no ads,
+  and no third-party SDKs. Nothing you do in the app is transmitted to the developer or anyone else.</p>
+
+  <h2>What the app stores, and where</h2>
+  <ul>
+    <li><b>Your training data</b> — program, workouts, sets, weights, notes — is stored locally on your
+      iPhone. It is included in your normal iPhone backup like any other app's data.</li>
+    <li><b>Apple Health</b>: with your permission, TR-1 <b>reads</b> workouts, body weight, resting heart
+      rate, sleep, and steps from Apple Health, and <b>writes</b> finished strength workouts and manual
+      body-weight entries back to it. You control this access in Settings ▸ Health, and the app works
+      (with reduced features) if you decline.</li>
+    <li><b>Weather</b>: on run days the app requests a forecast from Apple's WeatherKit using an
+      approximate (rounded) location. Location is never stored or shared.</li>
+    <li><b>Export</b>: you can export your data as JSON/CSV files at any time from within the app; those
+      files go only where you choose to save or share them.</li>
+  </ul>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>No analytics or tracking of any kind.</li>
+    <li>No data sent to the developer or any third party.</li>
+    <li>No account, sign-in, or cloud database.</li>
+  </ul>
+
+  <h2>Beta (TestFlight)</h2>
+  <p>TR-1 is distributed through Apple's TestFlight. If you choose to send feedback or crash reports
+  through TestFlight, Apple shares that feedback (including any screenshots you attach) with the
+  developer under <a href="https://www.apple.com/legal/privacy/">Apple's privacy terms</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: use the <b>Send Feedback</b> option in TestFlight.</p>
+</div>
+</body>
+</html>
